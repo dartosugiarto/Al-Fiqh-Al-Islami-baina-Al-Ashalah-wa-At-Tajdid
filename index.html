@@ -8,7 +8,7 @@
 
 <meta name="description" content="Ringkasan buku Dr. Yusuf Al-Qaradhawi, 'Al-Fiqh Al-Islami baina Al-Ashalah wa At-Tajdid', yang membahas perlunya pembaharuan (tajdid) dan ijtihad dalam fiqh agar tetap dinamis.">
 <meta name="author" content="Dr. Yusuf Al-Qaradhawi">
-<meta property="og:title" content="Ringkasan Buku: الفقه الإسلامي بين الأصالة والتجديد (Fiqh Islam Antara Orisinalitas dan Pembaharuan)">
+<meta property="og:title" content="Ringkasan Buku: الفقه الإسلامي بين الأصالة والتجدID (Fiqh Islam Antara Orisinalitas dan Pembaharuan)">
 <meta property="og:description" content="Menjelajahi gagasan Dr. Yusuf Al-Qaradhawi tentang bagaimana fiqh Islam harus menjaga orisinalitas (ashalah) sekaligus merangkul pembaharuan (tajdid) agar tetap relevan.">
 <meta property="og:type" content="article">
 <meta property="og:locale" content="id_ID">
@@ -25,7 +25,7 @@
 @media (prefers-color-scheme: dark){
   :root{
     --bg:#0d0f12;
-    --paper:#121417;
+    --paper:#1217;
     --ink:#E0E0E0;
     --muted:#9aa3ad;
     --hair:#22262b;
@@ -71,17 +71,35 @@ h2{
   text-align:left;
 }
 h3 {
-  font-size:1.1rem;
+  font-size:1.15rem;
   font-weight: 600;
   color: var(--accent);
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 2rem 0 0.75rem 0;
 }
 p{margin:0 0 1.25rem 0; font-size:1.05rem; text-wrap:pretty; text-align:justify; text-align-last: left; hyphens: auto;}
 p:last-of-type{margin-bottom:0}
 
-ul, ol{margin:0 0 1.25rem 1.2rem; padding:0}
+.block{
+  background:var(--paper);
+  border:1px solid var(--hair);
+  border-radius:16px;
+  padding:20px;
+  display:flex; justify-content:center; align-items:center;
+  margin:1.5rem 0 1.5rem 0;
+  box-shadow:0 1px 2px rgba(0,0,0,.06);
+}
+@media (prefers-color-scheme: dark){
+  .block{box-shadow:0 1px 2px rgba(0,0,0,.5)}
+}
+.block svg{
+  width:44px; height:44px; stroke-width:1.5;
+  fill:none; stroke:var(--accent);
+  stroke-linecap:round; stroke-linejoin:round;
+}
+
+ul, ol{margin:0 0 1.25rem 1.5rem; padding:0; list-style-position: outside;}
 ul ul, ol ol{margin-top:.5rem}
-li{margin-bottom: 0.5rem;}
+li{margin-bottom: 0.75rem; padding-left: 0.5rem;}
 
 /* Styling untuk kutipan */
 blockquote{
@@ -125,91 +143,168 @@ blockquote.arabic footer {
   <header role="banner">
     <h1>الفقه الإسلامي بين الأصالة والتجديد</h1>
     <div class="subtitle">(Fiqh Islam Antara Orisinalitas dan Pembaharuan)</div>
-    <div class="byline">Penulis: <strong>Dr. Yusuf Al-Qaradhawi</strong></div>
+    <div class="byline">Ringkasan Naratif Lengkap dari Buku Karya: <strong>Dr. Yusuf Al-Qaradhawi</strong></div>
   </header>
 
   <article role="article">
     
     <section id="bab-1" aria-labelledby="p1">
-      <h2 id="p1">BAB SATU: Pendahuluan (Keistimewaan Fiqh Islam)</h2>
+      <h2 id="p1">Bab Satu: Pendahuluan (Keistimewaan Fiqh Islam)</h2>
+      
+      <div class="block" aria-hidden="true">
+        <!-- Ikon Timbangan (Keadilan/Fiqh) -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3l-8 5v6c0 5.5 8 10 8 10s8-4.5 8-10V8l-8-5z"></path>
+          <path d="M12 21V11l-8-5"></path>
+          <path d="M12 11l8-5"></path>
+          <path d="M2 12l10 5 10-5"></path>
+          <path d="M12 3v8"></path>
+        </svg>
+      </div>
+
       <p>Dr. Yusuf Al-Qaradhawi memulai dengan menegaskan bahwa Fiqh Islam adalah capaian peradaban terpenting umat Islam. Fiqh sering disalahpahami sebagai sesuatu yang kaku dan statis oleh mereka yang tidak memahaminya. Padahal, ia memiliki keistimewaan yang membuatnya unggul dibandingkan sistem hukum buatan manusia.</p>
       
       <h3>Keistimewaan Utama Fiqh Islam:</h3>
-      <ul>
-          <li><strong>1. Sumber Rabbani (Ilahiah):</strong> Fiqh bersumber dari wahyu Allah (Al-Qur'an dan Sunnah). Ini memberinya kehormatan dan kepatuhan yang didasari iman, bukan sekadar paksaan penguasa. Kepatuhan ini adalah bagian dari keimanan itu sendiri.
+      <ol>
+          <li><strong>Sumber Rabbani (Ilahiah):</strong> Fiqh bersumber dari wahyu Allah (Al-Qur'an dan Sunnah). Ini memberinya kehormatan dan kepatuhan yang didasari iman, bukan sekadar paksaan penguasa. Kepatuhan ini adalah bagian dari keimanan itu sendiri.
             <blockquote class="arabic">
             فَلَا وَرَبِّكَ لَا يُؤْمِنُوْنَ حَتَّى يُحَكِّمُوكَ فِيمَا شَجَرَ بَيْنَهُمْ ثُمَّ لَا يَجِدُوا فِي أَنْفُسِهِمْ حَرَجًا مِّمَّا قَضَيْتَ وَيُسَلِّمُوا تَسْلِيمًا
             <footer>(QS. An-Nisa': 65)</footer>
             </blockquote>
           </li>
-          <li><strong>2. Motivasi Agama:</strong> Fiqh tidak hanya bergantung pada kekuasaan eksternal (hakim), tetapi pada pengawasan internal (hati nurani). Seorang Muslim tahu bahwa ia bisa lolos dari hukum dunia, tapi tidak dari pengadilan Allah di akhirat.</li>
-          <li><strong>3. Menjunjung Kemanusiaan:</strong> Fiqh melindungi kemuliaan manusia (fitrah) tanpa memandang ras, warna kulit, atau bahkan agama. Ini dibuktikan oleh kisah masyhur saat Nabi SAW berdiri menghormati jenazah Yahudi seraya berkata, <i>"Bukankah dia (juga) manusia?"</i></li>
-          <li><strong>4. Universal (Syumul):</strong> Cakupannya universal, mengatur seluruh aspek kehidupan, dari etika makan, ibadah, muamalah, hingga urusan negara dan politik.</li>
-          <li><strong>5. Bertujuan Membina Akhlak:</strong> Fiqh tidak memisahkan hukum dari moralitas. Setiap aturan hukum, baik perintah atau larangan, selalu dikaitkan dengan tujuan penyucian jiwa (tazkiyah) dan ketakwaan, seperti firman-Nya:
+          <li><strong>Motivasi Agama:</strong> Fiqh tidak hanya bergantung pada kekuasaan eksternal (hakim), tetapi pada pengawasan internal (hati nurani). Seorang Muslim tahu bahwa ia bisa lolos dari hukum dunia, tapi tidak dari pengadilan Allah di akhirat.</li>
+          <li><strong>Menjunjung Kemanusiaan:</strong> Fiqh melindungi kemuliaan manusia (fitrah) tanpa memandang ras, warna kulit, atau bahkan agama. Ini dibuktikan oleh kisah masyhur saat Nabi SAW berdiri menghormati jenazah Yahudi seraya berkata, <i>"Bukankah dia (juga) manusia?"</i></li>
+          <li><strong>Universal (Syumul):</strong> Cakupannya universal, mengatur seluruh aspek kehidupan, dari etika makan, ibadah, muamalah, hingga urusan negara dan politik.</li>
+          <li><strong>Bertujuan Membina Akhlak:</strong> Fiqh tidak memisahkan hukum dari moralitas. Setiap aturan hukum, baik perintah atau larangan, selalu dikaitkan dengan tujuan penyucian jiwa (tazkiyah) dan ketakwaan, seperti firman-Nya:
             <blockquote class="arabic">
             ...لَعَلَّكُمْ تَتَّقُونَ
             </blockquote>
             "...agar kamu bertakwa." (QS. Al-Baqarah: 183, tentang puasa).
           </li>
-          <li><strong>6. Moderat (Wasathiyyah):</strong> Fiqh Islam mengambil jalan tengah (QS. Al-Baqarah: 143). Ia tidak individualis ekstrem seperti Kapitalisme (yang membolehkan riba demi hak individu), namun juga tidak meniadakan hak individu secara total seperti Marxisme.</li>
-          <li><strong>7. Dinamis dan Menerima Pembaharuan:</strong> Keistimewaan terbesar fiqh adalah kemampuannya beradaptasi dengan perubahan zaman tanpa kehilangan pondasinya.</li>
-      </ul>
+          <li><strong>Berorientasi Internasional (Lintas Negara):</strong> Fiqh tidak bersifat kearaban, meskipun turun dalam bahasa Arab. Ia adalah rahmat bagi semesta alam (QS. Al-Anbiya': 107) dan telah terbukti melayani berbagai bangsa dan peradaban.</li>
+          <li><strong>Keistimewaan Judul dan Materi:</strong> Fiqh Islam (seperti ditegaskan Dr. Sanhuri) lebih mudah dipahami dan bebas dari kontradiksi internal, tidak seperti Undang-undang Romania yang seringkali rumit dan bertentangan.</li>
+          <li><strong>Moderat (Wasathiyyah):</strong> Fiqh Islam mengambil jalan tengah (QS. Al-Baqarah: 143).</li>
+          <li><strong>Seimbang antara Individu dan Kelompok:</strong> Ia tidak individualis ekstrem seperti Kapitalisme (yang membolehkan riba demi hak individu), namun juga tidak meniadakan hak individu secara total seperti Marxisme.</li>
+          <li><strong>Pondasi (Ushul Fiqh) yang Kokoh:</strong> Fiqh memiliki metodologi pengambilan hukum (istinbath) yang sangat terperinci dan logis (Ilmu Ushul Fiqh), sesuatu yang diakui keunggulannya bahkan oleh pakar hukum Barat.</li>
+          <li><strong>Dinamis dan Menerima Pembaharuan:</strong> Keistimewaan terbesar fiqh adalah kemampuannya beradaptasi dengan perubahan zaman tanpa kehilangan pondasinya, bahkan di era *taqlid* sekalipun, para ulama tetap berijtihad dalam kasus-kasus baru (nawazil).</li>
+      </ol>
       <p>Buku ini adalah upaya untuk menjawab tantangan: Bagaimana Fiqh Islam dapat mempertahankan orisinalitasnya (Ashalah) sekaligus melakukan pembaharuan (Tajdid) agar tetap relevan?</p>
     </section>
 
     <section id="bab-2" aria-labelledby="s2">
-      <h2 id="s2">BAB DUA: Makna Sejati Orisinalitas dan Pembaharuan</h2>
+      <h2 id="s2">Bab Dua: Makna Sejati Orisinalitas dan Pembaharuan</h2>
+      <div class="block" aria-hidden="true">
+        <!-- Ikon Daun Tumbuh (Pembaharuan/Tajdid) -->
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M5 21c.5 -4.5 2.5 -8 7 -8s6.5 3.5 7 8" />
+          <path d="M12 11v-7a3 3 0 0 1 3 3" />
+        </svg>
+      </div>
       <p>Banyak umat Islam terjebak dalam dua ekstrem: kelompok yang <em>jumud</em> (stagnan) yang menolak segala hal baru atas nama orisinalitas, dan kelompok yang "kebablasan" yang ingin mengubah segalanya atas nama pembaharuan, bahkan hingga meniru hukum Barat.</p>
       
-      <h3>Memahami Ashalah (Orisinalitas) vs. Tajdid (Pembaharuan)</h3>
+      <h3>Meluruskan Makna Ashalah dan Tajdid</h3>
       <p>Dr. Al-Qaradhawi meluruskan kedua pemahaman ini:</p>
       <ul>
-          <li><strong>Orisinalitas (Ashalah)</strong> bukanlah antonim dari "baru". Orisinalitas adalah antonim dari "palsu" atau "tercampur". Menjadi orisinal bukan berarti menolak yang lama, tetapi berarti menjaga agar fiqh tetap bersumber dari inti ajarannya yang murni dan tidak terkontaminasi pemikiran asing.</li>
+          <li><strong>Orisinalitas (Ashalah)</strong> bukanlah antonim dari "baru". Orisinalitas adalah antonim dari "palsu" atau "tercampur". Menjadi orisinal bukan berarti menolak yang baru, tetapi berarti menjaga agar fiqh tetap bersumber dari inti ajarannya yang murni (Al-Qur'an dan Sunnah) dan tidak terkontaminasi pemikiran asing yang bertentangan dengannya.</li>
           <li><strong>Pembaharuan (Tajdid)</strong> bukanlah "pembaratan" (westernisasi) atau mengganti hukum Islam dengan hukum lain. Pembaharuan berarti menghidupkan kembali, membersihkan dari unsur-unsur yang kaku, dan mengembalikannya ke sumber aslinya dengan metodologi yang relevan.</li>
       </ul>
       <p>Pembaharuan (tajdid) adalah sebuah keniscayaan dan rahmat Allah untuk umat ini, sebagaimana disabdakan oleh Rasulullah SAW:</p>
       <blockquote class="arabic">
-      إِنَّ اللَّهَ يَبْعَثُ لِهَذِهِ الْأُمَّةِ عَلَى رَأْسِ كُلِّ مِائَةِ سَنَةٍ مَنْ يُجَدِّدُ لَهَا دِينَهَا
+      إِنَّ اللَّهَ يَبْعَثُ لِهَذِهِ الْأُمَّةِ عَلَى رَأْسِ كُلِّ مِائَةِ سَنَةٍ مَنْ يُجَدِّدُ لَهَا dīnَهَا
       <footer>(HR. Abu Daud, Hakim, dan Baihaqi)</footer>
       </blockquote>
       <p>Artinya: "Sesungguhnya Allah mengutus untuk umat ini—pada setiap 100 tahun—orang yang melakukan pembaharuan terhadap agama ini."</p>
+      <p>Pembaharuan sejati, tegas Al-Qaradhawi, justru bertujuan melestarikan unsur-unsur orisinalitas yang pokok. Seperti merenovasi bangunan bersejarah, yang kita lakukan adalah memperkuat pondasinya dan membersihkan kotorannya, bukan merobohkannya untuk diganti bangunan baru.</p>
 
       <h3>Ciri-Ciri Pembaharuan Fiqh yang Diinginkan</h3>
-      <p>Pembaharuan yang dibutuhkan fiqh saat ini harus mencakup beberapa aspek:</p>
+      <p>Pembaharuan yang dibutuhkan fiqh saat ini harus mencakup beberapa aspek metodologis:</p>
       <ol>
         <li><strong>Penyusunan Teori (Tanzhir):</strong> Mengumpulkan hukum-hukum fiqh yang parsial (juz'i) dan tersebar dalam berbagai bab, lalu merumuskannya ke dalam "teori umum" yang komprehensif (misalnya: Teori Akad, Teori Kepemilikan, Teori Sanksi).</li>
-        <li><strong>Studi Perbandingan:</strong> Melakukan studi perbandingan (muqaranah) tidak hanya antar-madzhab internal Islam, tetapi juga perbandingan dengan hukum positif (Barat) untuk menunjukkan keunggulan fiqh Islam.</li>
+        <li><strong>Studi Perbandingan (Muqaranah):</strong> Melakukan studi perbandingan tidak hanya antar-madzhab internal Islam (untuk mengurangi fanatisme madzhab), tetapi juga perbandingan dengan hukum positif (Barat) untuk menunjukkan keunggulan fiqh Islam.</li>
         <li><strong>Menghubungkan Fiqh dengan Hadits:</strong> Membersihkan fiqh dari sandaran hadits-hadits dha'if (lemah) dan maudhu' (palsu), serta mengembalikannya pada hadits-hadits yang shahih.</li>
+        <li><strong>Perhatian Serius pada Fiqh Sahabat dan Tabi'in:</strong> Para sahabat adalah murid langsung Rasulullah SAW yang paling memahami ruh dan maqashid syariat. Pendapat mereka harus mendapat porsi khusus.</li>
         <li><strong>Kembali ke Referensi Otoritatif:</strong> Mendorong para peneliti untuk tidak hanya merujuk kitab ulama muta'akhirin (generasi belakangan), tetapi kembali menggali dari kitab-kitab induk (ummahat al-kutub) seperti *Al-Umm* (Syafi'i) atau *Al-Mudawwanah* (Maliki).</li>
       </ol>
     </section>
 
     <section id="bab-3" aria-labelledby="s3">
-      <h2 id="s3">BAB TIGA: Membuka Pintu Ijtihad dan Legislasi Fiqh (Taqnin)</h2>
+      <h2 id="s3">Bab Tiga: Membuka Pintu Ijtihad dan Legislasi Fiqh (Taqnin)</h2>
+      
+      <div class="block" aria-hidden="true">
+        <!-- Ikon Gerbang/Pintu Terbuka (Ijtihad) -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 20V4H6v16H4V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16h-2z"/>
+          <path d="M10 12H8v2h2v-2z"/>
+        </svg>
+      </div>
       
       <h3>1. Mendesaknya Ijtihad Kolektif (Jama'i)</h3>
       <p>Langkah terpenting dalam pembaharuan fiqh adalah membuka kembali pintu ijtihad, yang pada dasarnya tidak pernah berhak ditutup oleh siapa pun. Dr. Al-Qaradhawi menekankan bahwa ijtihad di masa kini tidak cukup lagi bersifat individual. Mengingat kompleksitas masalah modern (ekonomi, kedokteran, teknologi), ijtihad harus didorong ke arah <strong>Ijtihad Kolektif (jama'i)</strong> melalui lembaga-lembaga ilmiah (majelis ulama) yang melibatkan pakar dari berbagai disiplin ilmu.</p>
       
-      <h3>2. Batasan Ijtihad: Tsawabit vs. Mutaghayyirat</h3>
+      <h3>2. Syarat dan Batasan Ijtihad</h3>
       <p>Namun, ijtihad memiliki batasan yang jelas. Wilayah ijtihad adalah pada dalil-dalil yang bersifat <em>zhanniy</em> (interpretatif atau samar), bukan pada dalil yang <em>qath'iy</em> (definitif dan pasti). Al-Qaradhawi membaginya menjadi dua area:</p>
       <ul>
         <li><strong>Tsawabit (Statis):</strong> Area yang tidak boleh berubah. Ini adalah hukum-hukum yang dalilnya <em>qath'iy</em>—seperti kewajiban shalat, puasa, haramnya khamar, riba, dan daging babi, atau hukum waris yang spesifik. Inilah "ruang tertutup" yang menjaga identitas Islam.</li>
         <li><strong>Mutaghayyirat (Dinamis):</strong> Area yang bisa berubah. Ini adalah "ruang terbuka" yang sangat luas, di mana dalilnya bersifat <em>zhanniy</em> (multitafsir) atau tidak ada dalilnya sama sekali. Di sinilah letak kreativitas fiqh.</li>
       </ul>
-      <p>Ijtihad modern tidak boleh tunduk pada realitas yang dipaksakan oleh kolonialisme, melainkan harus berani mencari solusi orisinal dari dalam khazanah Islam.</p>
+      <p>Ijtihad modern, lanjutnya, tidak boleh tunduk pada realitas yang dipaksakan oleh kolonialisme (misalnya melegalkan riba bank hanya karena sudah umum), melainkan harus berani mencari solusi orisinal dari dalam khazanah Islam.</p>
 
-      <h3>3. Taqnin (Legislasi): Menuju Fiqh yang Praktis dan Eklektik</h3>
+      <h3>3. Taqnin (Legislasi): Menuju Fiqh yang Praktis</h3>
       <p>Salah satu gagasan terpenting Dr. Al-Qaradhawi adalah perlunya <em>Taqnin</em>, yaitu legislasi atau kodifikasi fiqh. Beliau menyoroti keluhan Prof. Abdul Qadir 'Audah, yang kesulitan mencari hukum dalam kitab-kitab fiqh klasik karena tidak sistematis dan tidak ada daftar isi. Fiqh yang tersimpan dalam format lama ini sulit diakses oleh hakim dan praktisi hukum modern.</p>
       <p>Oleh karena itu, fiqh harus dirumuskan dalam bentuk pasal-pasal undang-undang (qanun) yang sistematis. Upaya ini pernah dirintis oleh Kerajaan Turki Utsmani melalui <strong>"Majalah al-Ahkam al-'Adliyyah"</strong>. Namun, Al-Qaradhawi mengkritik bahwa Majalah tersebut memiliki kelemahan besar: ia "mengikat diri" hanya pada satu madzhab, yaitu Madzhab Hanafi.</p>
-      <p>Model <em>Taqnin</em> yang diinginkan di masa depan haruslah bersifat <strong>eklektik (mengambil dari banyak sumber)</strong>. Penyusun undang-undang tidak boleh fanatik pada satu madzhab, tetapi harus bebas memilih pendapat terkuat dan paling relevan dari *semua* madzhab yang diakui (Hanafi, Maliki, Syafi'i, Hanbali, Zhahiri, Zaidi, Ja'fari, dll.), bahkan dari pendapat para Sahabat dan Tabi'in.</p>
+
+      <h3>4. Perdebatan Seputar Taqnin</h3>
+      <p>Al-Qaradhawi memaparkan adanya kekhawatiran sebagian ulama terhadap ide *taqnin*, di antaranya:</p>
+      <ul>
+        <li>*Taqnin* akan mengikat hakim pada satu pendapat saja dan menghilangkan kekayaan ijtihad.</li>
+        <li>*Taqnin* akan membuat fiqh menjadi kaku seperti undang-undang buatan manusia.</li>
+        <li>*Taqnin* akan membuat hakim menjadi malas merujuk ke kitab-kitab fiqh induk.</li>
+      </ul>
+      <p>Beliau kemudian membantah kekhawatiran ini dengan argumentasi yang kuat:</p>
+      <ul>
+        <li>Hakim di era modern (terutama yang bukan mujtahid) justru perlu diikat agar keputusannya tidak kacau dan kontradiktif.</li>
+        <li>Masyarakat (pencari keadilan) perlu kepastian hukum; mereka harus tahu hukum apa yang berlaku di negara mereka, tidak bergantung pada madzhab apa yang dianut hakim.</li>
+        <li>*Taqnin* tidak akan memutus hubungan hakim dengan kitab fiqh, karena setiap undang-undang pasti membutuhkan kitab penjelasan (syarah) yang merujuk ke sumber aslinya.</li>
+      </ul>
+
+      <h3>5. Model Taqnin Syariat yang Dinginkan</h3>
+      <p>Model *Taqnin* yang diinginkan di masa depan haruslah bersifat <strong>eklektik (mengambil dari banyak sumber)</strong>. Penyusun undang-undang tidak boleh fanatik pada satu madzhab, tetapi harus bebas memilih pendapat terkuat dan paling relevan dari *semua* madzhab yang diakui (Hanafi, Maliki, Syafi'i, Hanbali, Zhahiri, Zaidi, Ja'fari, dll.), bahkan dari pendapat para Sahabat dan Tabi'in.</p>
       <p>Prinsip utamanya adalah memilih pendapat yang paling sesuai dengan <em>Maqashid Syari'ah</em> (tujuan syariat) dan yang paling membawa kemaslahatan serta kemudahan bagi manusia.</p>
+
+      <h3>6. Upaya Pendukung Lainnya</h3>
+      <p>Selain ijtihad dan *taqnin*, pembaharuan fiqh juga membutuhkan:</p>
+      <ul>
+        <li><strong>Penyusunan Ensiklopedi Fiqh:</strong> Mengorganisir fiqh dalam format ensiklopedis modern (seperti kamus) agar mudah diakses, seperti yang dirintis di Damaskus dan Kuwait.</li>
+        <li><strong>Penerbitan Ilmiah (Tahqiq):</strong> Menerbitkan ulang kitab-kitab *turats* (warisan klasik) dengan *tahqiq* (penelitian dan verifikasi) ilmiah yang benar, mencantumkan sub-judul, *takhrij* hadits, dan indeks yang rapi.</li>
+        <li><strong>Diseminasi Manuskrip:</strong> Mengeluarkan manuskrip-manuskrip fiqh berharga yang masih terkurung di perpustakaan agar bisa diteliti.</li>
+      </ul>
     </section>
 
     <section id="bab-4" aria-labelledby="s4">
-      <h2 id="s4">BAB EMPAT: Fiqh Itu Dinamis, Bukan Kaku</h2>
+      <h2 id="s4">Bab Empat: Eksistensi Fiqh Melalui Praktik</h2>
       
-      <h3>Bantahan terhadap Syubhat</h3>
-      <p>Dr. Al-Qaradhawi membantah keras tuduhan para orientalis dan kaum liberal bahwa Fiqh Islam itu kaku, tidak rasional, dan bersifat <em>ta'abbudiy</em> (hanya ritual baku). Beliau menegaskan bahwa selain ibadah murni (yang wilayahnya statis), seluruh hukum fiqh (terutama muamalah) sangat rasional dan berdasar pada <em>ta'lil</em> (logika sebab-akibat hukum) untuk mewujudkan kemaslahatan.</p>
+      <div class="block" aria-hidden="true">
+        <!-- Ikon Tunas/Tanaman Tumbuh (Dinamis) -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M17 9.17a1 1 0 0 0-1 1v4.66a1 1 0 0 0 1 1h0a1 1 0 0 0 1-1v-4.66a1 1 0 0 0-1-1z"/>
+          <path d="M13 11.17a1 1 0 0 0-1 1v2.66a1 1 0 0 0 1 1h0a1 1 0 0 0 1-1v-2.66a1 1 0 0 0-1-1z"/>
+          <path d="M9 13.17a1 1 0 0 0-1 1v.66a1 1 0 0 0 1 1h0a1 1 0 0 0 1-1v-.66a1 1 0 0 0-1-1z"/>
+          <path d="M12 2a10 10 0 0 0-10 10c0 4.4 2.9 8.1 6.8 9.5l.2-1.5C5.8 18.6 4 15.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8c0 3.6-1.8 6.6-4.9 8l.2 1.5C19.1 20.1 22 16.4 22 12A10 10 0 0 0 12 2z"/>
+        </svg>
+      </div>
+
+      <h3>1. Fiqh Harus Dipraktikkan</h3>
+      <p>Hal terpenting agar fiqh tetap hidup, berkembang, dan dinamis adalah dengan <strong>mempraktikkannya</strong>. Fiqh tidak boleh hanya menjadi warisan sejarah yang tersimpan di perpustakaan. Ia harus kembali menjadi landasan hukum dan peradilan, karena itulah panggilan iman:</p>
+      <blockquote class="arabic">
+      إِنَّمَا كَانَ قَوْلَ الْمُؤْمِنِيْنَ إِذَا دُعُوا إِلَى اللَّهِ وَرَسُوْلِهِ لِيَحْكُمَ بَيْنَهُمْ أَنْ يَقُوْلُوْا سَمِعْنَا وَأَطَعْنَا...
+      <footer>(QS. An-Nur: 51)</footer>
+      </blockquote>
+      <p>Artinya: "Sesungguhnya jawaban orang-orang mu'min, bila mereka dipanggil kepada Allah dan Rasul-Nya agar Rasul mengadili diantara mereka ialah ucapan 'Kami mendengar dan kami patuh'..."</p>
+      <p>Dr. Sanhuri, pakar hukum Mesir, juga menegaskan bahwa negara-negara Arab harus membumikan fiqh-nya sendiri dan melepaskan diri dari penjajahan hukum asing (seperti hukum Prancis) agar benar-benar merdeka.</p>
+
+      <h3>2. Bantahan terhadap Syubhat (Keraguan)</h3>
+      <p>Dr. Al-Qaradhawi membantah keras tuduhan para orientalis dan kaum liberal bahwa Fiqh Islam itu kaku dan tidak dinamis. Tuduhan ini muncul karena mereka gagal membedakan antara ruang statis (Tsawabit) dan ruang dinamis (Mutaghayyirat) dalam fiqh.</p>
       <p>Tuduhan kaku itu tidak benar, karena fleksibilitas syariat Islam sudah tertanam di dalamnya melalui beberapa sebab:</p>
       <ol>
           <li>Banyaknya ruang yang sengaja "dikosongkan" oleh syariat (wilayah <em>'afwu</em> atau maaf) untuk memberi keleluasaan ijtihad.</li>
@@ -222,17 +317,23 @@ blockquote.arabic footer {
           <li>Lafazh nash seringkali bersifat <em>zhanniy</em> (membuka peluang multitafsir).</li>
           <li>Adanya metode penggalian hukum yang dinamis seperti <em>Qiyas</em> (analogi), <em>Istihsan</em>, <em>Istishlah (Maslahah Mursalah)</em>, dan <em>'Urf</em> (adat kebiasaan).</li>
           <li>Prinsip emas bahwa: "Fatwa dapat berubah seiring perubahan waktu, tempat, kondisi, dan adat kebiasaan."</li>
+          <li>Adanya prinsip *rukhshah* (keringanan) saat kondisi darurat atau ada kebutuhan mendesak (*al-hajat tunazzalu manzilah al-dharurah*).</li>
       </ol>
-      <p>Pada akhirnya, hal terpenting agar fiqh tetap hidup, berkembang, dan dinamis adalah dengan <strong>mempraktikkannya</strong>. Fiqh tidak boleh hanya menjadi warisan sejarah yang tersimpan di perpustakaan. Ia harus kembali menjadi landasan hukum dan peradilan, karena itulah panggilan iman:</p>
-      <blockquote class="arabic">
-      إِنَّمَا كَانَ قَوْلَ الْمُؤْمِنِيْنَ إِذَا دُعُوا إِلَى اللَّهِ وَرَسُوْلِهِ لِيَحْكُمَ بَيْنَهُمْ أَنْ يَقُوْلُوْا سَمِعْنَا وَأَطَعْنَا...
-      <footer>(QS. An-Nur: 51)</footer>
-      </blockquote>
-      <p>Artinya: "Sesungguhnya jawaban orang-orang mu'min, bila mereka dipanggil kepada Allah dan Rasul-Nya agar Rasul mengadili diantara mereka ialah ucapan 'Kami mendengar dan kami patuh'..."</p>
+
+      <h3>3. Rasionalitas Fiqh Islam (Ta'lil al-Ahkam)</h3>
+      <p>Terakhir, Al-Qaradhawi membantah syubhat bahwa fiqh Islam bersifat <em>ta'abbudiy</em> (ritual baku yang tidak rasional). Beliau menegaskan bahwa selain ibadah murni (yang wilayahnya statis), seluruh hukum fiqh (terutama muamalah) sangat rasional dan berdasar pada <em>ta'lil</em> (logika sebab-akibat hukum) untuk mewujudkan kemaslahatan.</p>
+      <p>Bahkan ibadah murni pun memiliki *ta'lil* (alasan logis) secara global, seperti shalat yang mencegah perbuatan keji dan munkar, puasa untuk takwa, dan zakat untuk membersihkan harta. Seperti ditegaskan Ibnul Qayyim, "Tidak ada satu pun hukum dalam syari'at Islam yang bertentangan dengan qiyas (logika) yang benar."</t>
     </section>
 
     <section id="penutup" aria-labelledby="p2">
       <h2 id="p2">Penutup: Menuju Fiqh yang Hidup</h2>
+      <div class="block" aria-hidden="true">
+        <!-- Ikon Arah Panah Maju (Masa Depan) -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </div>
       <p>Buku "Al-Fiqh Al-Islami baina Al-Ashalah wa At-Tajdid" adalah sebuah seruan tegas dari Dr. Yusuf Al-Qaradhawi agar umat Islam kembali percaya diri dengan warisan fiqh-nya. Belia mengajak kita untuk tidak menjadi pengekor buta terhadap peradaban lain, sekaligus tidak menjadi "penjaga museum" yang kaku terhadap warisan sendiri.</p>
       <p>Fiqh Islam harus kembali pada fungsinya sebagai sumber hukum di negeri-negeri Muslim. Untuk mencapai itu, fiqh harus dirumuskan dalam bahasa zaman modern (melalui <em>Taqnin</em>), digali kembali dengan semangat ijtihad kolektif yang berani, dan dipahami sebagai sebuah sistem yang cerdas, fleksibel, dan penuh rahmat, yang mampu menjawab setiap tantangan zaman tanpa kehilangan identitas orisinalnya.</p>
     </section>
